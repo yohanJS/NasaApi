@@ -20,6 +20,19 @@ nav, footer {
 main>.container {
     padding: 60px 15px 0;
 }
+.container-img {
+    width: 30%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#my-image {
+    margin-top: 20px;
+    width: 100%;
+    object-fit: fill;
+    height: auto;
+    box-shadow: 1px 1px 10px 1px #eee;
+}
 .make-text-bigger {
     font-size: 2em;
     color: #00A7E1;
