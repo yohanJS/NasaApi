@@ -51,8 +51,39 @@
 
     <!--Main Section-->
     <main class="flex-shrink-0">
-        <div class="container">
-            <div id="content" class="container-img"></div>
+        <div class="container mt-4 mb-4">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="txt-color">NasaApp</h2>
+                    <h3 class="txt-color">Mars Rover Photos</h3>
+                    <p>
+                        This API is designed to collect image data gathered by NASA's Curiosity, Opportunity, 
+                        and Spirit rovers on Mars and make it more easily available to other developers, 
+                        educators, and citizen scientists. This API is maintained by 
+                        <a href="https://github.com/chrisccerami/mars-photo-api" target="_blank">Chris Cerami</a>.    
+                    </p>
+                    <p>
+                        I am a big fan of <strong>The Martian</strong>. Both the Book and the Movie, so I thought it was cool 
+                        to use Nasa API to find all the photos taken on Mars. The web app is simple to use. 
+                        Images are organized by the sol (Martian rotation or day) on which they were taken. 
+                        A photo taken on Curiosity's 1000th Martian sol exploring Mars, for example, will have a 
+                        sol attribute of 1000. Input a number that is greater than 0, and the application will 
+                        retrieve all the images taken on that Martian Sol.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <h3 class="txt-color">Search by Sol</h3>
+                    <div class="col">
+                        <input class="col-12 col-sm-5 col-md-2" id="sol" type="number" placeholder="number from 1 to 1000" aria-label="sol number" class="form-control">
+                    </div>
+                    <br>
+                    <button class="btn-primary col-2 col-sm-1 rounded" id="find">Find</button>
+                    
+                    <br>
+                    <div id="content" class="container-img mt-3"></div>
+                    <div id="my-images"></div>
+                </div>
+            </div>
         </div>
     </main>
 

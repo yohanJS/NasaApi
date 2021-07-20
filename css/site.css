@@ -21,17 +21,15 @@ main>.container {
     padding: 60px 15px 0;
 }
 .container-img {
-    width: 30%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    margin-bottom: 10px;
 }
 #my-image {
-    margin-top: 20px;
-    width: 100%;
-    object-fit: fill;
-    height: auto;
-    box-shadow: 1px 1px 10px 1px #eee;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    box-shadow: 0px 0px 10px 5px #a9a9a9;
+    border-radius: 5px;
 }
 .make-text-bigger {
     font-size: 2em;
@@ -52,4 +50,9 @@ main>.container {
 }
 footer i:hover {
     opacity: 0.6;
+}
+@media only screen and (max-width: 600px){
+	#my-image {
+        width: 100%;
+    }
 }
