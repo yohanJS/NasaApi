@@ -18,7 +18,7 @@ let fetchBySol = async () => {
   if($("sol").value == 0) {
     alert("Input must be greater than 0.\nTry Again!");
   } else {
-
+    $("feedback").innerHTML = "Finding data....\n Please wait.";
     let res = await fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${sol}&api_key=${MyKEY}`)
 
     try{
@@ -31,6 +31,7 @@ let fetchBySol = async () => {
           content.innerHTML += `<strong>Landing Date</strong> ${data.photos[0].rover.landing_date}.<br>`;
           content.innerHTML += `<strong>Rover Name:</strong> ${data.photos[0].rover.name}.<br>`;
           
+          $("feedback").innerHTML = "";
           //using the map function we iterate over the photos array
           //and insert them inside an image element using the source
           //attribute
