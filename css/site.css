@@ -9,6 +9,16 @@
 body {
     color: var(--black-color);
 }
+.links-container {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    background: none;
+    font-style: upper;
+}
 .txt-color {
     color: var(--primary-color);
 }
