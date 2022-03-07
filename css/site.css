@@ -17,7 +17,6 @@ body {
     border: none;
     font-size: 1em;
     background: none;
-    font-style: upper;
 }
 .txt-color {
     color: var(--primary-color);
